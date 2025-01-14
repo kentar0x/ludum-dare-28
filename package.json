@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "deploy test",
   "scripts": {
-    "build": "mkdir -p dist && npx cpy-cli npx cpy 'src/**/*' dist/ --parents && rm -rf dist/.git dist/.gitignore dist/node_modules dist/README.MD dist/CUSTOMIZING.md"
+    "build": "mkdir -p dist && npx cpy-cli 'src/**/*' dist/ --parents && rm -rf dist/.git dist/.gitignore dist/node_modules dist/README.MD dist/CUSTOMIZING.md"
   },
   "dependencies": {
     "cpy-cli": "^5.0.0"
