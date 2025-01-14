@@ -1,21 +1,14 @@
 {
-  "name": "ludumdare",
-  "description": "",
-  "readme": "",
-  "repository": "",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-connect": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-htmlmin": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-curl": "*",
-    "grunt-processhtml": "*"
-  }
+  "name": "Drunken",
+  "version": "1.0",
+  "description": "deploy test",
+  "scripts": {
+    "build": "mkdir -p dist && npx cpy-cli src/* dist && rm -rf dist/.git dist/.gitignore dist/node_modules dist/README.MD dist/CUSTOMIZING.md"
+  },
+  "dependencies": {
+    "cpy-cli": "^5.0.0"
+  },
+  "devDependencies": {},
+  "author": "kentarox",
+  "license": "MIT"
 }
